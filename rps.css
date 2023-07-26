@@ -1,0 +1,125 @@
+body {
+  background-color: black;
+}
+
+.title-game {
+  background-image: linear-gradient(to right, whitesmoke, black);
+  width: 100%;
+  height: 5rem;
+  border-radius: 12px;
+  border: 1px black solid;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-game span {
+  font-family: "VT323", monospace;
+  font-size: 2rem;
+}
+
+.div-play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes myAnimation {
+  0% {
+    opacity: 1;
+    transform: rotateX(100deg);
+  }
+
+  25% {
+    opacity: 0.7;
+    transform: rotateX(0deg);
+  }
+  50% {
+    opacity: 0.5;
+    transform: rotateX(100deg);
+  }
+  75% {
+    opacity: 0.3;
+    transform: rotateX(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: rotateX(100deg);
+    visibility: hidden;
+  }
+}
+
+.play-click {
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  font-family: "VT323", sans-serif;
+  border: 4px white solid;
+  scale: 1;
+  margin-top: 15%;
+}
+.play-click:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: 0.15s;
+}
+.play-click:active {
+  animation-name: myAnimation;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+}
+
+.display-negative {
+  display: none;
+}
+.game-paragraph {
+  color: white;
+  font-family: "VT323", "Times New Roman", Times, serif;
+  font-size: 2rem;
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.h1-container {
+  display: block;
+}
+
+.h1-game {
+  display: block !important;
+  color: white;
+  font-family: "VT323", sans-serif;
+  font-size: 3rem;
+  margin-left: 1%;
+}
+.result-display {
+  color: white;
+}
+.game-buttons {
+  font-size: 2rem;
+  padding: 5px;
+  margin: 1rem;
+  background-color: black;
+  color: whitesmoke;
+  border: 4px white solid;
+  font-family: "VT323";
+  border-radius: 15px;
+  margin-top: 10%;
+}
+.game-buttons:hover {
+  background-color: whitesmoke;
+  color: black;
+  transition: 0.15s;
+  cursor: pointer;
+}
+.game-buttons:active {
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+.negative-buttons {
+  display: none;
+}

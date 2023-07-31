@@ -75,6 +75,26 @@ body {
 .display-negative {
   display: none;
 }
+
+.play-again {
+  font-size: 1.8rem;
+  position: fixed;
+  top: 20% !important;
+  right: 10% !important;
+
+  float: right;
+  color: white;
+  background-color: black;
+  border: none;
+  font-family: "VT323", sans-serif;
+  scale: 1;
+}
+.play-again:hover {
+  cursor: pointer;
+  scale: 1.2;
+  opacity: 0.8;
+}
+
 .game-paragraph {
   color: white;
   font-family: "VT323", "Times New Roman", Times, serif;
@@ -106,7 +126,7 @@ body {
   border: 4px white solid;
   font-family: "VT323";
   border-radius: 15px;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .game-buttons:hover {
   background-color: whitesmoke;
